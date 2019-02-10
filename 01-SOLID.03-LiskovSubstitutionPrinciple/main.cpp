@@ -9,13 +9,13 @@ class Rectangle
 public:
 	Rectangle(int width, int height) : width(width), height(height) {}
 
-	int GetWidth() { return this->width; }
-	int GetHeight() { return this->height; }
+	int GetWidth() const { return this->width; }
+	int GetHeight() const { return this->height; }
 
 	virtual void SetWidth(int width) { this->width = width; }
 	virtual void SetHeight(int height) { this->height = height; }
 
-	int area() { return width * height; }
+	int area() const { return width * height; }
 
 protected:
 	int width, height;
