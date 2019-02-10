@@ -103,14 +103,14 @@ template <typename T> AndSpecification<T> operator&&(const Specification<T>& fir
 template <typename T> struct Filter
 {
 	virtual ~Filter() = default;
-	virtual std::vector<T*> filter(const std::vector<T*>& items, const Specification<T>& spec) = 0;
+	virtual std::vector<T*> filter(const std::vector<T*>& items, const Specification<T>& spec) const = 0;
 };
 
-struct GoodProductFilter : Filter<Product>
+template <typename T> struct GoodStandardFilter : Filter<T>
 {
-	std::vector<Product*> filter(const std::vector<Product*>& items, const Specification<Product>& spec) override
+	std::vector<T*> filter(const std::vector<T*>& items, const Specification<T>& spec) const override
 	{
-		std::vector<Product*> res;
+		std::vector<T*> res;
 		for (const auto& item : items) {
 			if (spec.isSatisfied(item)) {
 				res.push_back(item);
@@ -153,7 +153,7 @@ int main()
 
 	std::vector<Product*> allProducts{ &apple, &tree, &house, &chair };
 
-	GoodProductFilter pf;
+	GoodStandardFilter<Product> pf;
 
 	ColorSpecification greenSpec(Color::GREEN);
 	std::vector<Product*> greenProducts = pf.filter(allProducts, greenSpec);
