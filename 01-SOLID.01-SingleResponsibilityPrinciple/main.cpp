@@ -30,6 +30,10 @@ void Journal::add(const std::string& entry)
 	entries.push_back(entry);
 }
 
+/*
+ This is good: only PersistenceManager will be responsible
+ for the persistence layer of the application
+*/
 struct PersistenceManager
 {
 	static void save(const Journal& journal, const std::string& filename)
