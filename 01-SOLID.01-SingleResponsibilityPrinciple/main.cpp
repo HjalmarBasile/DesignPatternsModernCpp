@@ -8,7 +8,7 @@ struct Journal
 	std::string title;
 	std::vector<std::string> entries;
 
-	Journal(const std::string& title) : title(title) {};
+	Journal(const std::string& title) : title(title) {}
 
 	void add(const std::string& entry);
 
