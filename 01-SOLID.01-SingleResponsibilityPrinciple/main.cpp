@@ -59,7 +59,8 @@ int main()
 	PersistenceManager pm;
 	pm.save(journal, logfile);
 	std::cout << "Saved journal to " << logfile << std::endl;
-	std::cout << "Push button to exit"<< std::endl;
 
+	std::cout << "Push button to exit"<< std::endl;
 	std::cin.get();
+	return 0;
 }

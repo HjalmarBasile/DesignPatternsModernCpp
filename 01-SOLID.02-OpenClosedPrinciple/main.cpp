@@ -69,8 +69,11 @@ struct BadProductFilter
 	}
 };
 
-
-
+/*
+ This implementation is instead compliant with the OCP,
+ it can be applied to structs other than Product and
+ we have a generic logic for dealing with combination of filters
+*/
 template <typename T> struct Specification
 {
 	virtual ~Specification() = default;
