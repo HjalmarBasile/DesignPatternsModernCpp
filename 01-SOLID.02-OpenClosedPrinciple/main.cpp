@@ -3,7 +3,7 @@
 #include <vector>
 
 /*
- Open-Close principle:
+ Open-Closed principle:
  "Software entities should be open for extension, but closed for modification"
  i.e. extending functionalities should not come to the cost
  of modifying the whole codebase
