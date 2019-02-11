@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-SOLID.03-LiskovSubstitut
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-SOLID.04-InterfaceSegregationPrinciple", "01-SOLID.04-InterfaceSegregationPrinciple\01-SOLID.04-InterfaceSegregationPrinciple.vcxproj", "{FBAF8A62-7670-4398-9044-A485CC402186}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-SOLID.05-DependencyInversionPrinciple", "01-SOLID.05-DependencyInversionPrinciple\01-SOLID.05-DependencyInversionPrinciple.vcxproj", "{E8861976-AEE3-40F3-999A-89E66F825FF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{FBAF8A62-7670-4398-9044-A485CC402186}.Release|x64.Build.0 = Release|x64
 		{FBAF8A62-7670-4398-9044-A485CC402186}.Release|x86.ActiveCfg = Release|Win32
 		{FBAF8A62-7670-4398-9044-A485CC402186}.Release|x86.Build.0 = Release|Win32
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Debug|x64.ActiveCfg = Debug|x64
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Debug|x64.Build.0 = Debug|x64
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Debug|x86.Build.0 = Debug|Win32
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Release|x64.ActiveCfg = Release|x64
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Release|x64.Build.0 = Release|x64
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Release|x86.ActiveCfg = Release|Win32
+		{E8861976-AEE3-40F3-999A-89E66F825FF6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
