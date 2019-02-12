@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-Creational.01-Builder.02
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-Creational.01-Builder.03-FluentBuilder", "02-Creational.01-Builder.03-FluentBuilder\02-Creational.01-Builder.03-FluentBuilder.vcxproj", "{16CA825F-ACF7-4E15-9C81-03F4B0B70E78}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-Creational.01-Builder.04-GroovyStyleBuilder", "02-Creational.01-Builder.04-GroovyStyleBuilder\02-Creational.01-Builder.04-GroovyStyleBuilder.vcxproj", "{988CAE46-FF18-4081-9A1B-245B7C774D5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{16CA825F-ACF7-4E15-9C81-03F4B0B70E78}.Release|x64.Build.0 = Release|x64
 		{16CA825F-ACF7-4E15-9C81-03F4B0B70E78}.Release|x86.ActiveCfg = Release|Win32
 		{16CA825F-ACF7-4E15-9C81-03F4B0B70E78}.Release|x86.Build.0 = Release|Win32
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Debug|x64.ActiveCfg = Debug|x64
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Debug|x64.Build.0 = Debug|x64
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Debug|x86.ActiveCfg = Debug|Win32
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Debug|x86.Build.0 = Debug|Win32
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Release|x64.ActiveCfg = Release|x64
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Release|x64.Build.0 = Release|x64
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Release|x86.ActiveCfg = Release|Win32
+		{988CAE46-FF18-4081-9A1B-245B7C774D5C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
