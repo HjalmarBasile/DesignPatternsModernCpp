@@ -7,7 +7,9 @@ class Tag
 public:
 	friend std::ostream& operator<<(std::ostream& os, const Tag& tag)
 	{
-		os << "<" << tag.name;
+		std::string ind1(Tag::indentStart, ' ');
+		std::string ind2(Tag::indentStart + Tag::indentStep, ' ');
+		os << ind1 << "<" << tag.name;
 
 		for (const auto& [key, val] : tag.attributes) {
 			os << " " << key << "=\"" << val << "\"";
@@ -18,12 +20,16 @@ public:
 		} else {
 			os << ">" << std::endl;
 			if (tag.text.length() > 0) {
-				os << tag.text << std::endl;
+				os << ind2 << tag.text << std::endl;
 			}
+
+			Tag::indentStart += 2;
 			for (const auto& child : tag.children) {
 				os << child;
 			}
-			os << "</" << tag.name << ">";
+			Tag::indentStart -= 2;
+
+			os << ind1 << "</" << tag.name << ">";
 		}
 
 		os << std::endl;
@@ -37,6 +43,8 @@ protected:
 	Tag(const std::string& name, const std::vector<Tag>& children)
 		: name(name), children(children) {}
 
+	inline static unsigned int indentStart = 0;
+	static constexpr unsigned int indentStep = 2;
 	std::string name;
 	std::string text;
 	std::vector<Tag> children;
