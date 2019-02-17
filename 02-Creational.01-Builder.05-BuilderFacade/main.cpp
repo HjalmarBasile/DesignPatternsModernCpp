@@ -12,9 +12,11 @@ int main()
 			.at("Street 123")
 			.withPostCode("123456")
 			.in("NYC")
+			.end()
 		.works()
-		.at("ThatCompany")
-		.as("Dev");
+			.at("ThatCompany")
+			.as("Dev")
+			.end();
 	std::cout << p << std::endl;
 
 	std::cout << "Push button to exit" << std::endl;

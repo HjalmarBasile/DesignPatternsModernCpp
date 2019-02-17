@@ -3,10 +3,10 @@
 #include <string>
 #include "PersonBuilder.h"
 
-class PersonJobBuilder : public PersonBuilderBase
+class PersonJobBuilder : public PersonSpecificationBuilderBase
 {
 public:
-	PersonJobBuilder(Person& person) : PersonBuilderBase(person) {}
+	PersonJobBuilder(Person& person) : PersonSpecificationBuilderBase(person) {}
 
 	PersonJobBuilder& at(const std::string& companyName)
 	{

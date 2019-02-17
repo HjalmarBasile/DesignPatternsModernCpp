@@ -3,10 +3,10 @@
 #include <string>
 #include "PersonBuilder.h"
 
-class PersonAddressBuilder : public PersonBuilderBase
+class PersonAddressBuilder : public PersonSpecificationBuilderBase
 {
 public:
-	explicit PersonAddressBuilder(Person& person) : PersonBuilderBase(person) {}
+	explicit PersonAddressBuilder(Person& person) : PersonSpecificationBuilderBase(person) {}
 
 	PersonAddressBuilder& at(const std::string& streetAddress)
 	{
