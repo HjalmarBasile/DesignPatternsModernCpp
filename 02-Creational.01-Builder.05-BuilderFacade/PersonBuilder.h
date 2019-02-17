@@ -21,9 +21,8 @@ protected:
 
 class PersonBuilder : public PersonBuilderBase
 {
-public:
-	PersonBuilder() : PersonBuilderBase(person) {}
-
+	friend class Person;
 private:
+	PersonBuilder() : PersonBuilderBase(person) {}
 	Person person;
 };
